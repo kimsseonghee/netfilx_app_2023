@@ -1,0 +1,102 @@
+.blind{
+  display: none;
+}
+.profile_edit_page {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .profile_image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    border: 1px solid #ddd;
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .profile_uploader {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      background: rgba(255, 255, 255, 0.8);
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      padding:10px 13px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    input[type="file"] {
+      display: none;
+    }
+  }
+  .edit_name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    input[type="text"] {
+      width: 100%;
+      max-width: 400px;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 4px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      margin-bottom: 20px;
+      // placeholder{
+      //   text-align: center;
+      // }
+    }
+    button {
+      background-color: transparent;
+      border: 1px solid #aa0810;
+      border-radius: 5px;
+      padding: 8px 90px;
+      box-sizing: border-box;
+      font-size: 18px;
+      color: #aa0810;
+      cursor: pointer;
+      &:hover {
+        color: #000;
+        background: #aa0810;
+      }
+    }
+  }
+  button.logout {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+  }
+  // .profile_bg{
+  //   color: #fff;
+  //   font-size: 35px;
+  //   padding: 80px 0 0 70px;
+  //   box-sizing: border-box;
+  //   border-radius: 10px;
+  //   position: absolute;
+  //   width: 450px;
+  //   height: 660px;
+  //   background: rgba(0, 0, 0, 0.5);
+  // }
+}
