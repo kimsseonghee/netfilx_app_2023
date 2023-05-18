@@ -95,4 +95,3 @@ const ProfilePage = ({ userObj, setUserObj }) => {
 };
 
 export default ProfilePage;
-

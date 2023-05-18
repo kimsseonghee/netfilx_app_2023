@@ -49,7 +49,7 @@ function SearchPage({vote_average}) {
                   <img src={movieImageUrl} alt={movie.title} className='movie__poster'/>
                   <div className='search__content'>
                     <h2 className='movie__title'>{movie.title || movie.name}</h2>
-                    <p className='modal__details_number'>{vote_average}</p>
+                    <p className='modal__details_number'>평점{movie.vote_average}</p>
                     <p className='movie__infom'>{movie.release_date ? movie.release_date : movie.first_air_date}</p>
                   </div>
                 </div>
