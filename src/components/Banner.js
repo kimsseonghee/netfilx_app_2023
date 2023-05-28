@@ -3,11 +3,13 @@ import axios from 'api/axios';
 import requests from 'api/requests';
 import "styles/Banner.css"
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 function Banner() {
     const [movie, setMovie] = useState([]);
     const [isClicked, setIsClickde] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() =>{
         fetchData()
@@ -48,7 +50,7 @@ function Banner() {
                     <button className='banner__button play' onClick={() => setIsClickde(true)}>
                         play
                     </button>
-                    <button className='banner__button info' onClick={() => setIsExpanded(!isExpanded)}>
+                    <button className='banner__button info' onClick={()=>{navigate(`/${movie.id}`)}}>
                         More Information
                     </button>
                 </div>
